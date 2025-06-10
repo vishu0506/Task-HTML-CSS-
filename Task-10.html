@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Basic Information Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5aff5;
+            padding: 30px;
+        }
+
+        form {
+            background-color: #f8e8f3;
+            padding: 25px;
+            border-radius: 10px;
+            max-width: 600px;
+            margin: auto;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            background-color: #f7bdf7;
+            padding:5px
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        input[type="email"],
+        select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border-radius: 5px;
+            border: 1px solid #413939;
+        }
+
+        .Gender{margin-top:5px; padding:10px}
+        .Course {padding:5px;
+            margin-top:5px;}
+
+        .buttons {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .buttons input {
+            padding: 10px 20px;
+            margin: 0 10px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .buttons input[type="submit"] {
+            background-color: #28a745;
+            color: white;
+        }
+
+        .buttons input[type="reset"] {
+            background-color: #dc3545;
+            color: white;
+        }
+        .Bio{width:580px; height:100px; padding:0px}
+    </style>
+</head>
+<body>
+
+    <form>
+        <h1>Basic Information Form</h1>
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required="true">
+
+        <label for="mobile">Mobile No:</label>
+        <input type="number" id="mobile" name="mobile" placeholder="Enter your monile no." required="true">
+
+        <label for="Aadhar">Aadhar No:</label>
+        <input type="number" id="Aadhar No." name="Aadhar" placeholder="Enter your aadhar no." required="true">
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your mail" required="true">
+
+        <label for="Gender">Gender:</label>
+        <div class="gender">
+            <input type="radio" name="gender" required="true">Male
+            <input type="radio" name="gender" required="true">Female
+            <input type="radio" name="gender" required="true">Other
+        </div>
+
+        <label for="Course">Course: </label>
+        <div class="Course">
+            <select required>
+                <option>--Select--</option>
+            <option>B.tech</option>    
+            <option>B.Arch</option>
+            <option>M.tech</option>  
+            </select>
+        </div>
+
+        <label for="tea">Do you like tea?</label>
+        <select id="tea" name="tea">
+            <option value="">--Select--</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+            <option value="Sometimes">Sometimes</option>
+        </select>
+
+        <div class="Bio">
+        <label for="Bio">Bio:</label> 
+        <textarea placeholder="Bio" rows="8" column="0"></textarea>
+        </div><br><br>
+
+        <div class="buttons">
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </div>
+    </form>
+
+</body>
+</html>
