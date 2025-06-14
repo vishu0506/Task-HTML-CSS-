@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cyber Shield - Stay Safe Online</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #0f1c31;
+      color: #e6edf3;
+      line-height: 1.6;
+      border: 5px solid white;
+    }
+
+    header {
+      background-color: #161b22;
+      padding: 1rem 2rem;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: #58a6ff;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    .nav-links a {
+      color: #e6edf3;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    .nav-links a:hover {
+      color: #58a6ff;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 4rem 2rem;
+      background: url('https://source.unsplash.com/1600x500/?cybersecurity,hacking') no-repeat center/cover;
+      color: white;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: auto;
+    }
+
+    .section {
+      padding: 3rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 2rem;
+      color: #58a6ff;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.7rem;
+    }
+
+    .card {
+      background-color: #1e2530;
+      padding: 1.5rem;
+      border-radius: 8px;
+      transition: transform 0.3s ease;
+      text-align: center;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .center-img {
+      display: block;
+      margin: 2rem auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+    }
+
+    .gallery {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+      margin: 2rem 0;
+    }
+
+    .gallery img {
+      width: 300px;
+      height: 300px;
+      border-radius: 8px;
+      transition: transform 0.3s;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    .tips-list {
+      list-style: square;
+      padding-left: 1.5rem;
+      font-size: 1.1rem;
+      max-width: 600px;
+      margin: auto;
+    }
+
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      max-width: 500px;
+      margin: auto;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      padding: 0.8rem;
+      border: none;
+      border-radius: 5px;
+      background-color: #2c323d;
+      color: white;
+    }
+
+    .contact-form button {
+      background-color: #58a6ff;
+      padding: 0.8rem;
+      border: none;
+      border-radius: 5px;
+      color: #0d1117;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .contact-form button:hover {
+      background-color: #1f6feb;
+    }
+
+    footer {
+      background-color: #161b22;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      margin-top: 2rem;
+    }
+
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 2rem;
+      }
+
+      .nav-links {
+        flex-direction: column;
+        gap: 0.8rem;
+        align-items: flex-start;
+      }
+
+      .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">🛡️ Cyber Shield</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#threats">Threats</a></li>
+        <li><a href="#tips">Safety Tips</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <marquee behavior="alternate" style="padding: 10px; background-color: #103050; color: #fff;">
+    Protect your data from cyber attacks. Cybersecurity is the practice of protecting digital devices, networks,
+    and sensitive data from cyber threats such as hacking, malware, and phishing attacks.
+  </marquee>
+
+  <section class="hero" id="home">
+    <h1>Protect Your Digital World</h1>
+    <p>Cybersecurity is the shield that guards your data and privacy.</p>
+  </section>
+
+  <img src="C3.jpeg" width="600" height="400" alt="Cybersecurity Image" class="center-img">
+
+  <section class="section" id="threats">
+    <h2>Common Cyber Threats</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Phishing</h3>
+        <p>Fake emails or messages that steal your personal information.</p>
+      </div>
+      <div class="card">
+        <h3>Malware</h3>
+        <p>Malicious software that damages or hacks your system.</p>
+      </div>
+      <div class="card">
+        <h3>Ransomware</h3>
+        <p>Blocks access to your files unless a ransom is paid.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="gallery">
+    <img src="C4.webp" alt="Phishing">
+    <img src="Types-of-Malware.png" alt="Malware">
+    <img src="ransom.png" alt="Ransomware">
+  </div>
+
+  <section class="section" id="tips">
+    <h2>Top 5 Safety Tips</h2>
+    <ul class="tips-list">
+      <li>Use strong & unique passwords</li>
+      <li>Enable two-factor authentication</li>
+      <li>Keep your software up to date</li>
+      <li>Avoid clicking on suspicious links</li>
+      <li>Use antivirus and firewall protection</li>
+    </ul>
+  </section>
+
+  <section class="section" id="contact">
+    <h2>Contact Us</h2>
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Cyber Shield. Protect your privacy.</p>
+  </footer>
+</body>
+</html>
